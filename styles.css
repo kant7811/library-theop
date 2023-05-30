@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+html, body{
+    max-height: 100%;
+}  
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html, body {
+  height: 100%;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+body{
+  background-color: bisque;
+  margin: 1rem;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+}
+
+.dugme{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 1rem;
+}
+.dodaj{
+  border: solid red 1px;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background: red;
+  cursor: pointer;
+
+}
+.dodaj:hover{
+  transform: scale(1.1);
+}
+
+.book-form{
+  display: block;
+  width: 270px;
+  height: 350px;
+  border: solid gray 1px;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  
+}
+
+
+.sub{
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background: burlywood;
+  padding: 0.3rem;
+  cursor: pointer;
+}
+.sub:hover{
+  transform: scale(1.1);
+}
+.close{
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background: burlywood;
+  padding: 0.3rem;
+  cursor: pointer;
+}
+.close:hover{
+  transform: scale(1.1);
+}
+
+
+

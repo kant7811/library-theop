@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="header">
+    <h2 class="header-title">Library</h2>
+    <p class="header-paraone">Add book to library</p>
+    <p class="header-paratwo">Click on the button to add a new book</p>
+    </div>
+    <div class="dugme">
+    <button class="dodaj">New book</button>
+    </div>
+    <div class="book-form" style="display: none;">
+      <form id="new-book">
+        <label for="title">
+          Book title
+          <input
+          type="text"
+          id="title"
+          placeholder="Book title"
+          name="title"
+          required
+          />
+        </label>
+        <label for="author">
+          Author
+          <input
+          type="text"
+          id="author"
+          placeholder="Author"
+          name="author"
+          required
+          />
+        </label>
+        <label for="pages">
+          Number of pages
+          <input
+          type="number"
+          id="pages"
+          placeholder="1"
+          name="pages"
+          min="1"
+          step="1"
+          required
+          />
+        </label>
+        <label for="read">
+          Read
+          <input
+          class="read"
+          type="checkbox"
+          id="read"
+          name="read"
+          />
+        </label>
+        <button type="submit" class="sub">Add book</button>
+        <button type="reset" class="close">Cancel</button>
+      </form>
+      <p id="error"></p>
+    </div>
+    <div class="library"></div>
+    <script src="script.js"></script>
+  </body>
